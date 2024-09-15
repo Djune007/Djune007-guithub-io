@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.logo a {
+  text-decoration: underline;
+  text-decoration-color: #00ff9d; /* Define a cor do sublinhado */
+  color: black; /* Define a cor do texto */
+}
+.logo h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  color: white;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.menu__btn {
+  display: none;
+}
+
+.baixar {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.baixar:hover {
+  color: #00ff9d;
+}
+
+nav.categories {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+nav.categories a {
+  color: #00ff9d;
+  text-decoration: none;
+}
+
+nav.categories a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-bottom: 40px;
+}
+
+.wallpaper-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.wallpaper-item {
+  background-color: #292929;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.wallpaper-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.wallpaper-item p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    display: flex;
+    width: 100%;
+  }
+
+  header .logo h1 {
+    font-size: 18px;
+  }
+
+  header .search-bar input {
+    width: 70px;
+  }
+
+  .search-btn {
+    width: 60px;
+  }
+
+  nav.categories a {
+    font-size: 13px;
+  }
+
+  .show {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 5;
+  }
+
+  .wallpaper-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
